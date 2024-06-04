@@ -1,0 +1,38 @@
+.login-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.login-btn {
+  display: flex;
+}
+
+form.login h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error-login {
+  color: red;
+  text-align: center;
+}
+
+.google-btn-auth {
+  display: flex;
+  justify-content: center;
+}
+
+.or-google {
+  text-align: center;
+  font-size: 1rem;
+  opacity: 90%;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}

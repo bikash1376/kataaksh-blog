@@ -1,0 +1,161 @@
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  display: block;
+}
+
+.header-container {
+  max-width: 1280px;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 56px;
+}
+
+.logo {
+  font-weight: 700;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-self: center;
+  align-items: center;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: inherit;
+  gap: 10px;
+}
+
+#main-header a.logo {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#main-header nav {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  height: 100%;
+  align-items: center;
+}
+
+.dropbtn {
+  background-color: #222;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+@media (max-width: 560px) {
+  .create-header-btn {
+    display: none;
+  }
+  .header-login-btn {
+    display: none;
+  }
+}
+
+.main-new-post-link {
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-new-post-link:hover {
+  color: #449a4a;
+}
+
+.header-main-btn {
+  background-color: #fff;
+  color: #449a4a;
+  padding: 0 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #449a4a;
+  line-height: 1.4;
+  height: 35px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.header-main-btn:hover {
+  background-color: #449a4a;
+  color: #fff;
+}
+
+.header-login-btn {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  line-height: 1.4;
+  height: 35px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.header-login-btn:hover {
+  color: #449a4a;
+  background-color: #dbe6e0;
+}
+
+.hamburger-btn {
+  display: inline-block;
+}
+.hamburger-btn button {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  margin-top: 1px;
+  display: inline-flex;
+  padding: 0.3rem;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  fill: #222222;
+}
+.hamburger-btn button:hover {
+  fill: #449a4a;
+  background-color: rgba(68, 154, 74, 0.1);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    padding: 0 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 10px 0 0;
+  }
+}
