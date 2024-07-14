@@ -8,7 +8,7 @@ export default defineConfig({
     host: true,
     proxy: {
       "/api": {
-        target: "http://localhost:4000/",
+        target: "https://kataaksh-backend.onrender.com/",
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, ""),
       },
