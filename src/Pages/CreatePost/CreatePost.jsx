@@ -55,7 +55,7 @@ function CreatePost() {
 
       if (response.statusText === "OK") {
         navigate("/");
-         reFetchPosts();
+        reFetchPosts();
         
       }
     } catch (error) {
