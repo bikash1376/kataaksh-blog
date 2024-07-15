@@ -54,8 +54,8 @@ function CreatePost() {
       );
 
       if (response.statusText === "OK") {
+         reFetchPosts();
         navigate("/");
-        reFetchPosts();
       }
     } catch (error) {
       toast.error(error.response.data);
